@@ -1,0 +1,240 @@
+/*模态页面的css样式设定*/
+@charset "UTF-8";
+
+/*游戏开始时的整体蒙版*/
+#mask-start{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+ 
+	background-color: rgba(0, 0, 0, .9);
+	text-align: center;
+	z-index: 10;
+}
+
+#modal-start-pet{
+	margin-top: 5%;
+	margin-left: 15%;
+	margin-right:15%;
+	width: 70%;
+}
+
+#modal-btn-start{
+	display: none;
+	position: absolute;
+	left: 40%;
+	bottom: 5%;
+	width: 20%;
+}
+
+/*游戏结束时的整体蒙版*/
+#mask-over{
+    display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, .9);
+	text-align: center;
+	z-index: 10;
+}
+
+#result-area{
+	float: left;
+	width: 100%;
+}
+
+/*位于modal层顶部居中的吉祥物图*/
+.modal-pet-top{
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 90%;
+}
+
+/*提示点击右上角分享按钮的顶部图块*/
+.modal-game-share{
+	display: none;
+	width: 60%;
+	margin-left: 30%;
+	margin-top: 5%;
+
+}
+
+/*中间得分的按钮区域*/
+.btn-score-area{
+	width: 88%;
+	margin-top: 8%;
+
+	text-align: center;
+}
+.btn-top-score-area{ margin-top: 10px !important;}
+
+.btn-score-area .btn{ width: 50%; }
+
+.btn-current-score{
+	border-left: 1px solid #DFDFDF;
+	border-top: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+	
+	color: #333;
+}
+
+.btn-highest-score{
+	border-right: 1px solid #DFDFDF;
+	border-top: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+
+	color: #333;
+}
+
+.title-score{ float: left; margin-left: 7px; font-size: 1.4em; font-weight: bold; }
+
+
+.font-current-score{ float: right; margin-right: 7px; color: #f80059 !important; font-size: 1.6em; font-family: "NexaBold"; }
+.font-highest-score{ float: right; margin-right: 7px; color: #fff !important; font-size: 1.6em; font-family: "NexaBold"; }
+
+.btn-rank,.btn-submit{
+	float: left;
+	width: 88%;
+	margin-left: 6%;
+	margin-top: 10px;
+	border: 1px solid #DFDFDF;
+
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #333;
+}
+
+/*用户提交昵称数据的界面区域*/
+#user-submit-area{
+	display: none;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.input-group{
+	width: 88%;
+	margin-left: 6%;
+	margin-top: 10px;
+}
+
+.form-control{ height: 40px; }
+
+/*查看得分排名的整体区域*/
+.rank-area{
+	display: none;
+	float: left;
+	width: 88%;
+	margin-left: 6%;
+	margin-top: 10px;
+
+	border: 1px solid #abbba1;
+
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	     -o-border-radius: 5px;
+	        border-radius: 5px;
+}
+/*查看得分排名 的列表标题*/
+.rank-title{
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 22px;
+
+	-webkit-border-top-left-radius: 5px;
+	   -moz-border-top-left-radius: 5px;
+	    -ms-border-top-left-radius: 5px;
+	     -o-border-top-left-radius: 5px;
+	        border-top-left-radius: 5px;
+
+	-webkit-border-top-right-radius: 5px;
+	   -moz-border-top-right-radius: 5px;
+	    -ms-border-top-right-radius: 5px;
+	     -o-border-top-right-radius: 5px;
+	        border-top-right-radius: 5px;
+
+}
+
+.rank-list{
+	float: left;
+	width: 100%;
+	background-color: #d1d1d1;
+	overflow-y: scroll; 
+}
+
+.rank-list-item{
+	float: left;
+	width: 94%;
+	margin-left: 3%;
+	height: 16px;
+	line-height: 16px;
+}
+.rank-list-item-current{ 
+	background-color: #808080;
+
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	    -ms-border-radius: 2px;
+	     -o-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+.rank-list-item-wrap{
+	float: left;
+	width: 100%;
+}
+
+.rank-list-wrap-item{ float: left; text-align: center;}
+.rank-list-item-num{  width: 10%; font-family: "NexaBold";}
+.rank-list-item-user{  width: 80%; }
+.rank-list-item-score{  width: 10%; font-family: "NexaBold"; color: #f80059;}
+
+/*modal层页面底部的按钮区域*/
+.modal-btm-btn-area{
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+}
+
+/*modal层页面底部的按钮*/
+.modal-btm-btn{
+	float: left;
+	width: 20%;
+	margin-left: 10%;
+}
+
+/*底部的版权所有图片*/
+.modal-btm-copyright{
+	position: absolute;
+	left: 4%;
+	bottom: 3px;
+	width: 92%;
+}
+
+
+/*用户提交信息后的提示框*/
+.info-window{
+	display: none;
+	position: absolute;
+	top: 80px;
+	left: 20%;
+	width: 60%;
+	height: 80px;
+
+	border: 0;
+	color: #fff;
+
+	z-index: 30;
+
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	     -o-border-radius: 5px;
+	        border-radius: 5px;
+}

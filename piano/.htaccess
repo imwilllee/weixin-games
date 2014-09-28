@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule ^.git - [F,L]
+	RewriteRule ^core - [F,L]
+</IfModule>
